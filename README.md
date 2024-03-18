@@ -8,9 +8,7 @@ This repository provides an easy to use Python tool for automated de-identificat
 If you are using CTA-DEFACE, please cite the following publication: 
 
 
-- Mustafa Ahmed Mahmutoglu, Aditya Rastogi, Gianluca Brugnara, Michael Baumgartner, Martha Foltyn-Dumitru, Marianne Schell, Martin Bendszus, Philipp Vollmuth. Deep-Learning-based Defacing Tool for CT Angiography. Radiology AI, 2023
-  https://doi.org/10.1148/ryai.230095
-
+- Mustafa Ahmed Mahmutoglu, Aditya Rastogi, Gianluca Brugnara, Michael Baumgartner, Martha Foltyn-Dumitru, Marianne Schell, Martin Bendszus, Philipp Vollmuth. Deep-Learning-based Defacing Tool for CT Angiography. 
 
 
 
