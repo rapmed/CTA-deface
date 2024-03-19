@@ -41,7 +41,7 @@ After installation, download the weights of our model provided in the ..........
 Here is a minimalistic example of how you can use CTA-DEFACE. 
 
 ```bash
-nnUNet_predict CTA-DEFACE -i <INPUT_FOLDER> -o <OUTPUT_FOLDER> -c 3d_fullres
+nnUNet_predict CTA-DEFACE -i <INPUT_FOLDER> -o <OUTPUT_FOLDER> -c 3d_lowres
 ```
 
 The above command will look for all nifti files (*.nii.gz) in the INPUT_FOLDER and save the renamed NIfTI files in THE OUTPUT_FOLDER with the predicted face masks. 
