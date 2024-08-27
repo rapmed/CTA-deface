@@ -5,12 +5,13 @@
 
 This repository provides an easy to use Python tool for automated de-identification of CT angiography images. 
 
-If you are using CTA-DEFACE, please cite the following publication: 
+If you are using CTA-DEFACE, please cite the following publication (accepted for publication, coming soon): 
 
+```shell
+- Mustafa Ahmed Mahmutoglu, Aditya Rastogi, Marianne Schell, Martha Foltyn-Dumitru, Michael Baumgartner, Klaus Hermann Maier-Hein, Katerina Deike-Hofmann, Alexander Radbruch, Martin Bendszus, Gianluca Brugnara, Philipp Vollmuth. 
+  "Deep-Learning-based Defacing Tool for CT Angiography: CTA-DEFACE" 
 
-- Mustafa Ahmed Mahmutoglu, Aditya Rastogi, Marianne Schell, Martha Foltyn-Dumitru, Michael Baumgartner, Klaus Hermann Maier-Hein, Katerina Deike-Hofmann, Alexander Radbruch, Martin Bendszus, Gianluca Brugnara, Philipp Vollmuth. Deep-Learning-based Defacing Tool for CT Angiography. (coming soon)
-
-
+```
 
 Key points:
 *	The developed ANN model (CTA-DEFACE) automatically generates facemasks for CT angiography images. 
