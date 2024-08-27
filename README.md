@@ -1,6 +1,6 @@
 # CTA-DEFACE
 
-## CTA-DEFACE: De-Identification Network for CT Angiography 
+## Deep learning-based defacing tool for CT angiography: CTA-DEFACE
 
 
 This repository provides an easy to use Python tool for automated de-identification of CT angiography images. 
@@ -8,19 +8,19 @@ This repository provides an easy to use Python tool for automated de-identificat
 If you are using CTA-DEFACE, please cite the following publication: 
 
 
-- Mustafa Ahmed Mahmutoglu, Aditya Rastogi, Gianluca Brugnara, Michael Baumgartner, Martha Foltyn-Dumitru, Marianne Schell, Martin Bendszus, Philipp Vollmuth. Deep-Learning-based Defacing Tool for CT Angiography. 
+- Mustafa Ahmed Mahmutoglu, Aditya Rastogi, Marianne Schell, Martha Foltyn-Dumitru, Michael Baumgartner, Klaus Hermann Maier-Hein, Katerina Deike-Hofmann, Alexander Radbruch, Martin Bendszus, Gianluca Brugnara, Philipp Vollmuth. Deep-Learning-based Defacing Tool for CT Angiography. (coming soon)
 
 
 
-Compared to other previously published brain CT defacing tools, CTA-DEFACE has some significant advantages:
-- The CTA-DEFACE model was able to reliably segment soft face tissue in CTA data achieving DSC of 0.94±0.02 on an external test set. 
-
-- After applying face detection and verification networks, our model showed substantially lower face detection probability (p < 0.001) and similarity to the original CTA image (p < 0.001). 
+Key points:
+•	The developed ANN model (CTA-DEFACE) automatically generates facemasks for CT angiography images. 
+•	CTA-DEFACE offers superior deidentification capabilities compared to a publicly available model.
+•	By means of graphics processing unit optimization, our model ensures rapid processing of medical images.
+•	Our model underwent external validation, underscoring its reliability for real-world application.
 
 
 
 # Installation Instructions 
-There are two options to use the CTA-DEFACE tool. 
 
 ## 1) Creating a new python environment
 
@@ -32,37 +32,19 @@ method for deep learning-based biomedical image segmentation. Nature methods, 18
 
 https://github.com/MIC-DKFZ/nnUNet
 ```
-After installation, download the weights of our model provided in the .....................
+After installation, download the weights of our model provided in this link: (coming soon)
 
 
 # How to use it 
 
 
-Here is a minimalistic example of how you can use CTA-DEFACE. 
+Here is a minimalistic example of how you can use CTA-DEFACE. (the code will be added soon)
 
 ```bash
-nnUNet_predict CTA-DEFACE -i <INPUT_FOLDER> -o <OUTPUT_FOLDER> -c 3d_lowres
+python run_CTA-DEFACE.py -i <INPUT_FOLDER> -o <OUTPUT_FOLDER>
 ```
 
 The above command will look for all nifti files (*.nii.gz) in the INPUT_FOLDER and save the renamed NIfTI files in THE OUTPUT_FOLDER with the predicted face masks. 
-
-
-## 2) Docker file
-
-Download the docker file ( --- coming soon ---).
-
-```bash
-docker pull ..........................
-```
-
-Create a parent folder (for example a folder named as `mount_folder` ) which includes the folders `input`, `output` and `code`. Copy the `run.sh` file into the `code` folder.
-Run the following command to mount the parent folder and run the HD-SEQ-ID. 
-
-```bash
-docker run -it --name ................. --gpus all --mount type=bind,source="<mount_folder>",target=/mnt/ .................. /bin/bash -c "/mnt/code/run.sh"
-```
-
-If you're using the docker version, you don't need to install the weights manually, they are already in the docker image.
 
 
  
