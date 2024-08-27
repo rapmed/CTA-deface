@@ -39,7 +39,7 @@ After installation, download the weights of our model provided in this link: (co
 # How to use it 
 
 
-Here is a minimalistic example of how you can use CTA-DEFACE. (the code will be added soon)
+Here is an example of how you can use CTA-DEFACE. (the code will be added soon)
 
 ```bash
 python run_CTA-DEFACE.py -i <INPUT_FOLDER> -o <OUTPUT_FOLDER>
