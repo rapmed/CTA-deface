@@ -13,10 +13,10 @@ If you are using CTA-DEFACE, please cite the following publication:
 
 
 Key points:
-•	The developed ANN model (CTA-DEFACE) automatically generates facemasks for CT angiography images. 
-•	CTA-DEFACE offers superior deidentification capabilities compared to a publicly available model.
-•	By means of graphics processing unit optimization, our model ensures rapid processing of medical images.
-•	Our model underwent external validation, underscoring its reliability for real-world application.
+*	The developed ANN model (CTA-DEFACE) automatically generates facemasks for CT angiography images. 
+*	CTA-DEFACE offers superior deidentification capabilities compared to a publicly available model.
+*	By means of graphics processing unit optimization, our model ensures rapid processing of medical images.
+*	Our model underwent external validation, underscoring its reliability for real-world application.
 
 
 
