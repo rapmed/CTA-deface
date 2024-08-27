@@ -22,7 +22,7 @@ Key points:
 
 # Installation Instructions 
 
-## 1) Creating a new python environment
+## Creating a new python environment
 
 Since our model is heavily dependend on nnUNet, please visit their repository for installation instructions and also cite their paper:
 
