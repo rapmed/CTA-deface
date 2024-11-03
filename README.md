@@ -16,6 +16,9 @@ Eur Radiol Exp. 2024 Oct 9;8(1):111.
 doi: 10.1186/s41747-024-00510-9.
 ```
 
+![alt text](https://github.com/CCI-Bonn/CTA-DEFACE/blob/main/CTA-DEFACE_example.png?raw=true)
+
+
 
 Key points:
 *	The developed ANN model (CTA-DEFACE) automatically generates facemasks for CT angiography images and subtracts them py replacing the mask with the 10th percentile in the CT image (representing void space/air). 
