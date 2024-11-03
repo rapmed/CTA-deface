@@ -9,7 +9,9 @@ If you are using CTA-DEFACE, please cite the following publication:
 
 
 ```shell
-Mahmutoglu MA, Rastogi A, Schell M, Foltyn-Dumitru M, Baumgartner M, Maier-Hein KH, Deike-Hofmann K, Radbruch A, Bendszus M, Brugnara G, Vollmuth P. Deep learning-based defacing tool for CT angiography: CTA-DEFACE. Eur Radiol Exp. 2024 Oct 9;8(1):111. 
+Mahmutoglu MA, Rastogi A, Schell M, Foltyn-Dumitru M, Baumgartner M, Maier-Hein KH, Deike-Hofmann K, Radbruch A, Bendszus M, Brugnara G, Vollmuth P. 
+Deep learning-based defacing tool for CT angiography: CTA-DEFACE. 
+Eur Radiol Exp. 2024 Oct 9;8(1):111. 
 
 doi: 10.1186/s41747-024-00510-9.
 ```
