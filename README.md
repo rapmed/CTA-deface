@@ -61,7 +61,7 @@ Download the trained model from the following link and put the `Dataset001_DEFAC
 https://drive.google.com/drive/folders/1k4o35Dkl7PWd2yvHqWA2ia-BNKrWBrqg?usp=sharing
 ```
 
-Make sure the CT or CTA image names end with `_0000.nii.gz`, which is important to be recognized by the model. 
+Make sure CT or CTA input images names end with `_0000.nii.gz`, which is important to be recognized by the model. 
 
 ```bash
 python run_CTA-DEFACE.py -i <INPUT_FOLDER> -o <OUTPUT_FOLDER>
