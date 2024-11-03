@@ -73,6 +73,8 @@ python run_CTA-DEFACE.py -i input -o output
 
 The above command will look for all nifti files (*.nii.gz) in the `input` folder and save the <ins>defaced NIfTI files</ins> and the <ins>face mask</ins> in the `output` folder. 
 
+CAVE: Our model and python code was designed to run on `Ubuntu` in a preinstalled nnunet environment, plase adjust accordingly in case you intend to use the code in other operating systems.
+
 
  
  
