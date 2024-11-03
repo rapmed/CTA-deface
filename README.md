@@ -47,6 +47,14 @@ https://github.com/MIC-DKFZ/nnUNet
 ```
 
 Clone this repository and add your images to the input folder. 
+Create `input`, `output` and `model` folders in the same folder as the `run_CTA-DEFACE.py`.
+
+```bash
+mkdir input
+mkdir output
+mkdir model
+```
+
 Make sure the CT or CTA image names end with `_0000.nii.gz`, which is important to be recognized by the model. 
 
 ```bash
