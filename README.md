@@ -68,10 +68,10 @@ https://drive.google.com/drive/folders/1k4o35Dkl7PWd2yvHqWA2ia-BNKrWBrqg?usp=sha
 Make sure the CT or CTA input image names end with `_0000.nii.gz`, which is important to be recognized by the model. 
 
 ```bash
-python run_CTA-DEFACE.py -i <INPUT_FOLDER> -o <OUTPUT_FOLDER>
+python run_CTA-DEFACE.py -i input -o output
 ```
 
-The above command will look for all nifti files (*.nii.gz) in the INPUT_FOLDER and save the `defaced` NIfTI files and the `face mask` in THE OUTPUT_FOLDER with the predicted face masks. 
+The above command will look for all nifti files (*.nii.gz) in the `input` folder and save the <ins>defaced NIfTI files</ins> and the <ins>face mask</ins> in the `output` folder. 
 
 
  
