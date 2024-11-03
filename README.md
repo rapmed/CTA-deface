@@ -18,6 +18,7 @@ doi: 10.1186/s41747-024-00510-9.
 
 ![alt text](https://github.com/CCI-Bonn/CTA-DEFACE/blob/main/CTA-DEFACE_example.png?raw=true)
 
+The example image above was rendered in 3D Slicer software using "CT-Muscle" display preset. 
 
 
 Key points:
