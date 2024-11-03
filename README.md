@@ -3,7 +3,7 @@
 ## Deep learning-based defacing tool for CT angiography: CTA-DEFACE
 
 
-This repository provides an easy to use Python tool for automated de-identification of CT angiography images. 
+This repository provides an easy to use tool based on `nnUNet` for automated de-identification of CT angiography images. 
 
 If you are using CTA-DEFACE, please cite the following publication:
 
@@ -25,7 +25,7 @@ Key points:
 
 # Installation Instructions 
 
-## Creating a new python environment
+
 
 Since our model is heavily dependend on nnUNet, please visit their repository for installation instructions and also cite their paper:
 
