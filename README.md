@@ -55,6 +55,12 @@ mkdir output
 mkdir model
 ```
 
+Download the trained model from the following link and put the `Dataset001_DEFACE` folder inside the `model` folder.
+
+```bash
+https://drive.google.com/drive/folders/1k4o35Dkl7PWd2yvHqWA2ia-BNKrWBrqg?usp=sharing
+```
+
 Make sure the CT or CTA image names end with `_0000.nii.gz`, which is important to be recognized by the model. 
 
 ```bash
