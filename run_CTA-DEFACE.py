@@ -86,7 +86,7 @@ def main(input_folder, output_folder):
 
 if __name__ == "__main__":
     print(f"##############################################")
-
+    print(f"Please cite: Mahmutoglu MA, Rastogi A, Schell M, Foltyn-Dumitru M, Baumgartner M, Maier-Hein KH, Deike-Hofmann K, Radbruch A, Bendszus M, Brugnara G, Vollmuth P. Deep learning-based defacing tool for CT angiography: CTA-DEFACE. Eur Radiol Exp. 2024 Oct 9;8(1):111. doi: 10.1186/s41747-024-00510-9.")
     print(f"##############################################")
     parser = argparse.ArgumentParser(description="Create segmentation and defaced images.")
     parser.add_argument("-i", "--input_folder", type=str, required=True, help="Path to input folder containing .nii.gz images")
