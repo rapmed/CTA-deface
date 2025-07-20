@@ -6,6 +6,7 @@ from pathlib import Path
 import nibabel as nib
 import numpy as np
 import re
+import torch
 
 
 os.environ['nnUNet_results'] = './model'
@@ -24,7 +25,9 @@ def run_nnunet_inference(input_folder, output_folder):
         "-o", output_folder,
         "-d", "001",
         "-c", "3d_fullres",
-        "-f", "all"
+        "-f", "all",
+        "--disable_tta",           # disable test-time augmentation for speed
+        "-device", "cuda"          # force GPU usage
     ]
     
     print("Executing command:", " ".join(command))
@@ -40,10 +43,21 @@ def save_mask(mask, affine, output_path):
     nib.save(mask_nifti, output_path)
 
 def create_defaced_image(image_path, mask, output_path):
+
+    # Load image and move to GPU
     image = nib.load(image_path)
-    image_data = image.get_fdata()
-    defaced_image = image_data * (1 - mask)
-    defaced_nifti = nib.Nifti1Image(defaced_image, image.affine)
+    image_data_np = image.get_fdata()
+    p10 = np.percentile(image_data_np, 10)
+
+    image_tensor = torch.tensor(image_data_np, dtype=torch.float32, device="cuda")
+    mask_tensor = torch.tensor(mask, dtype=torch.bool, device="cuda")
+
+    # Deface using 10th percentile on GPU
+    defaced_tensor = torch.where(mask_tensor, torch.tensor(p10, device="cuda"), image_tensor)
+
+    # Move back to CPU and save
+    defaced_np = defaced_tensor.cpu().numpy()
+    defaced_nifti = nib.Nifti1Image(defaced_np, image.affine)
     nib.save(defaced_nifti, output_path)
 
 def create_defaced_image(image_path, mask, output_path):
